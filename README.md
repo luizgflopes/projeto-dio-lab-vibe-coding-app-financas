@@ -68,6 +68,7 @@ Um app que usa **linguagem natural** para registrar transações e fornece **dic
    - Balanço financeiro com:  
      - Receita (verde)  
      - Despesa (vermelho)  
+   - **Toda despesa ou receita lançada deve aparecer automaticamente no dashboard.**  
    - Gráfico ou lista resumida.  
 
 5. **Extrato Filtrável**  
@@ -110,6 +111,7 @@ Um app que usa **linguagem natural** para registrar transações e fornece **dic
 - **Validação inicial**:  
   - Testar com 5–10 usuários iniciantes.  
   - Observar se conseguem registrar transações sem esforço.  
+  - Verificar se todas as transações aparecem corretamente no dashboard.  
   - Coletar feedback sobre clareza do dashboard e utilidade do extrato.  
 
 ---
@@ -144,11 +146,13 @@ A solução deve ser construída com base em **Design Universal**, garantindo qu
 **Tela de Dashboard**  
 - Seção “Carteira Pessoal”: saldo, receitas, despesas.  
 - Seção “Carteira da Casa”: saldo, despesas (com nome do usuário que lançou).  
+- **Todas as transações (despesas e receitas) aparecem automaticamente aqui.**  
 - Cores contrastantes (verde para receita, vermelho para despesa).  
 
 **Tela de Extrato**  
 - Filtros: por categoria, por período, por carteira.  
 - Lista clara e legível, com ícones simples.  
+
 ```
 
 Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
@@ -189,3 +193,17 @@ No README do seu repositório, inclua:
 ## 💬 Conclusão
 
 Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição técnica. O verdadeiro objetivo aqui é aprender a pensar junto com a IA, transformando ideias em conceitos reais e enxergando a tecnologia como uma extensão do seu raciocínio criativo. Cada interação é um experimento, quanto mais clara for sua intenção, mais surpreendente será o resultado.
+
+
+## Prints do APP
+<img width="1365" height="732" alt="image" src="https://github.com/user-attachments/assets/735db93a-ba32-4d26-a10b-4a6cdfb4d5c1" />
+
+<img width="1339" height="725" alt="image" src="https://github.com/user-attachments/assets/23869791-e6b8-4fe3-a9cf-bd50bdb70617" />
+
+<img width="1364" height="725" alt="image" src="https://github.com/user-attachments/assets/fa807543-8dc1-4b04-ad49-49619b16d1e8" />
+
+<img width="1354" height="722" alt="image" src="https://github.com/user-attachments/assets/1aeadfbf-c557-4fae-bb46-cc1abd50ca56" />
+
+
+
+
