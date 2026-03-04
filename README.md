@@ -26,27 +26,114 @@ Antes de pedir para a IA "criar um app", é importante definir com clareza o que
 Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
 
 ```txt
-# Contexto
-Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
-A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
+# 📄 PRD – App de Organização de Finanças Pessoais via Chat
 
-# Problema
-Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
-Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
+## 1. Contexto
+Criar um aplicativo de **organização financeira pessoal** que funcione por meio de conversas naturais.  
+O usuário interage com um **chat** para registrar despesas e receitas, que são automaticamente classificadas e exibidas em um painel simples.
 
-# Público-Alvo
-Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
+---
 
-# Funcionalidades-Chave
-1. Registrar gastos via chat em linguagem natural.  
-2. Classificar automaticamente as transações.  
-3. Definir e acompanhar metas financeiras.  
-4. Receber dicas de economia do “Agente Financeiro”.  
-5. Visualizar relatórios simples e personalizados.
+## 2. Problema
+- Apps de finanças atuais exigem **entrada manual extensa** (formulários, planilhas).  
+- Pouca personalização e experiência engessada.  
+- Usuários iniciantes acabam desistindo por falta de praticidade.  
 
-# Entregável da IA
-Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
-Usar tom educativo e linguagem acessível, em português.
+**Solução proposta:**  
+Um app que usa **linguagem natural** para registrar transações e fornece **dicas automáticas de economia**, tornando o processo leve e acessível.
+
+---
+
+## 3. Público-Alvo
+- Pessoas que querem começar a organizar suas finanças sem complicação.  
+- Usuários iniciantes em controle financeiro.  
+- Jovens adultos e profissionais que buscam praticidade.
+
+---
+
+## 4. Funcionalidades-Chave (MVP)
+1. **Chat de Registro de Transações**  
+   - Usuário digita: “Gastei 50 reais no mercado” → sistema registra como despesa, categoria “Alimentação”.  
+   - “Recebi 200 reais de freelas” → sistema registra como receita.  
+
+2. **Classificação Automática**  
+   - Tags sugeridas com base na linguagem natural (ex: mercado → alimentação, Uber → transporte).  
+
+3. **Dashboard Simples**  
+   - Balanço financeiro com:  
+     - Receita (verde)  
+     - Despesa (vermelho)  
+   - Gráfico ou lista resumida.  
+
+4. **Extrato Filtrável**  
+   - Usuário pode pedir: “Mostrar despesas de alimentação” ou “Receitas do mês”.  
+
+5. **Carteiras Individuais**  
+   - Duas carteiras iniciais: **Pessoal** e **Casa**.  
+   - Usuário escolhe via chat ou botão rápido em qual carteira lançar a transação.  
+   - Dashboard mostra saldo e balanço **separado por carteira**.  
+   - Futuramente: criação de carteiras adicionais e **carteira compartilhada** entre usuários.
+
+---
+
+## 5. Funcionalidades Futuras (não no MVP, mas planejadas)
+- **Agente Financeiro**: dicas de economia personalizadas.  
+- **Alertas inteligentes**: “Você gastou 20% a mais em transporte este mês”.  
+- **Integração com bancos/cartões** para importação automática.  
+- **Carteira compartilhada** com múltiplos usuários.  
+
+---
+
+## 6. Entregáveis do MVP
+- **Principais telas**:  
+  - Tela de chat (entrada de dados).  
+  - Dashboard simples (saldo, receitas, despesas).  
+  - Tela de extrato filtrável.  
+  - Visualização separada por carteira (Pessoal e Casa).  
+
+- **Recursos necessários**:  
+  - Processamento de linguagem natural (para interpretar entradas).  
+  - Banco de dados simples (armazenar transações).  
+  - Interface básica (chat + dashboard).  
+
+- **Validação inicial**:  
+  - Testar com 5–10 usuários iniciantes.  
+  - Observar se conseguem registrar transações sem esforço.  
+  - Coletar feedback sobre clareza do dashboard e utilidade do extrato.  
+
+---
+
+## 7. Design Universal ✨
+A solução deve ser construída com base em **Design Universal**, garantindo que:  
+- O aplicativo seja **intuitivo e acessível** para iniciantes e usuários experientes.  
+- Interfaces com **contraste adequado, fontes legíveis e navegação simples**.  
+- Compatibilidade com **recursos de acessibilidade** (ex: leitores de tela, legendas, comandos de voz).  
+- Dashboard visual e direto, com cores e ícones que facilitem a compreensão.  
+
+---
+
+## 8. Sugestões para MVP
+- **Começar pequeno**: apenas chat + dashboard + extrato + carteiras básicas.  
+- **Evitar complexidade inicial**: não incluir integração bancária ou IA avançada logo de cara.  
+- **Iterar rápido**: após validar, adicionar o “Agente Financeiro” com dicas simples (ex: “Você gastou muito em alimentação este mês”).  
+
+---
+
+## 9. Mini Wireframe Textual
+
+**Tela de Chat**  
+- Campo de entrada: “Gastei 100 reais no supermercado [Casa]”  
+- Sistema entende: despesa, categoria alimentação, carteira da casa.  
+- Sugestão de tags rápidas: [Pessoal] [Casa]  
+
+**Tela de Dashboard**  
+- Seção “Carteira Pessoal”: saldo, receitas, despesas.  
+- Seção “Carteira da Casa”: saldo, receitas, despesas.  
+- Cores contrastantes (verde para receita, vermelho para despesa).  
+
+**Tela de Extrato**  
+- Filtros: por categoria, por período, por carteira.  
+- Lista clara e legível, com ícones simples.  
 ```
 
 Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
