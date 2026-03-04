@@ -204,6 +204,8 @@ Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição
 
 <img width="1354" height="722" alt="image" src="https://github.com/user-attachments/assets/1aeadfbf-c557-4fae-bb46-cc1abd50ca56" />
 
+<img width="1365" height="727" alt="image" src="https://github.com/user-attachments/assets/f69066fa-6bf6-4930-8949-6a0b07b65a6c" />
+
 
 
 
