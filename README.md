@@ -30,7 +30,8 @@ Um bom PRD deve descrever o problema, quem será beneficiado, as principais func
 
 ## 1. Contexto
 Criar um aplicativo de **organização financeira pessoal** que funcione por meio de conversas naturais.  
-O usuário interage com um **chat** para registrar despesas e receitas, que são automaticamente classificadas e exibidas em um painel simples.
+O usuário interage com um **chat** para registrar despesas e receitas, que são automaticamente classificadas e exibidas em um painel simples.  
+Neste primeiro momento, o app será baseado em uma **página web**.
 
 ---
 
@@ -52,27 +53,34 @@ Um app que usa **linguagem natural** para registrar transações e fornece **dic
 ---
 
 ## 4. Funcionalidades-Chave (MVP)
-1. **Chat de Registro de Transações**  
+1. **Página de Login e Cadastro**  
+   - Usuário pode criar conta com e-mail e senha.  
+   - Login simples para acessar suas carteiras e dados.  
+
+2. **Chat de Registro de Transações**  
    - Usuário digita: “Gastei 50 reais no mercado” → sistema registra como despesa, categoria “Alimentação”.  
    - “Recebi 200 reais de freelas” → sistema registra como receita.  
 
-2. **Classificação Automática**  
+3. **Classificação Automática**  
    - Tags sugeridas com base na linguagem natural (ex: mercado → alimentação, Uber → transporte).  
 
-3. **Dashboard Simples**  
+4. **Dashboard Simples**  
    - Balanço financeiro com:  
      - Receita (verde)  
      - Despesa (vermelho)  
    - Gráfico ou lista resumida.  
 
-4. **Extrato Filtrável**  
+5. **Extrato Filtrável**  
    - Usuário pode pedir: “Mostrar despesas de alimentação” ou “Receitas do mês”.  
 
-5. **Carteiras Individuais**  
+6. **Carteiras Individuais e Compartilhadas**  
    - Duas carteiras iniciais: **Pessoal** e **Casa**.  
    - Usuário escolhe via chat ou botão rápido em qual carteira lançar a transação.  
    - Dashboard mostra saldo e balanço **separado por carteira**.  
-   - Futuramente: criação de carteiras adicionais e **carteira compartilhada** entre usuários.
+   - **Carteira da Casa Compartilhada**:  
+     - Apenas despesas.  
+     - Cada despesa registrada deve mostrar o **nome do usuário logado** que lançou.  
+   - Futuramente: criação de carteiras adicionais e compartilhamento entre múltiplos usuários.
 
 ---
 
@@ -80,20 +88,23 @@ Um app que usa **linguagem natural** para registrar transações e fornece **dic
 - **Agente Financeiro**: dicas de economia personalizadas.  
 - **Alertas inteligentes**: “Você gastou 20% a mais em transporte este mês”.  
 - **Integração com bancos/cartões** para importação automática.  
-- **Carteira compartilhada** com múltiplos usuários.  
+- **Carteira compartilhada completa** (com receitas e múltiplos usuários).  
 
 ---
 
 ## 6. Entregáveis do MVP
 - **Principais telas**:  
+  - Tela de login/cadastro.  
   - Tela de chat (entrada de dados).  
   - Dashboard simples (saldo, receitas, despesas).  
   - Tela de extrato filtrável.  
   - Visualização separada por carteira (Pessoal e Casa).  
+  - Registro de despesas da casa com nome do usuário logado.  
 
 - **Recursos necessários**:  
+  - Autenticação básica (login/cadastro).  
   - Processamento de linguagem natural (para interpretar entradas).  
-  - Banco de dados simples (armazenar transações).  
+  - Banco de dados simples (armazenar transações e usuários).  
   - Interface básica (chat + dashboard).  
 
 - **Validação inicial**:  
@@ -113,13 +124,17 @@ A solução deve ser construída com base em **Design Universal**, garantindo qu
 ---
 
 ## 8. Sugestões para MVP
-- **Começar pequeno**: apenas chat + dashboard + extrato + carteiras básicas.  
+- **Começar pequeno**: login/cadastro + chat + dashboard + extrato + carteiras básicas.  
 - **Evitar complexidade inicial**: não incluir integração bancária ou IA avançada logo de cara.  
 - **Iterar rápido**: após validar, adicionar o “Agente Financeiro” com dicas simples (ex: “Você gastou muito em alimentação este mês”).  
 
 ---
 
 ## 9. Mini Wireframe Textual
+
+**Tela de Login/Cadastro**  
+- Campos: e-mail, senha.  
+- Botão: [Entrar] [Cadastrar].  
 
 **Tela de Chat**  
 - Campo de entrada: “Gastei 100 reais no supermercado [Casa]”  
@@ -128,7 +143,7 @@ A solução deve ser construída com base em **Design Universal**, garantindo qu
 
 **Tela de Dashboard**  
 - Seção “Carteira Pessoal”: saldo, receitas, despesas.  
-- Seção “Carteira da Casa”: saldo, receitas, despesas.  
+- Seção “Carteira da Casa”: saldo, despesas (com nome do usuário que lançou).  
 - Cores contrastantes (verde para receita, vermelho para despesa).  
 
 **Tela de Extrato**  
